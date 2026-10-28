@@ -46,7 +46,7 @@
                   img(src='@/assets/curso/temas/t3/tarjeta01_3.png')
               .col-md-6
                 h4 Tráfico
-                p Dirige usuarios hacia un canal digital específico, como una página <i>web</i>, tienda virtual, catálogo, <i>blog</i>, formulario, <i>landing</i> page o perfil comercial. El anuncio debe precisar el beneficio de acceder al destino e incorporar un llamado a la acción coherente con el recorrido propuesto.
+                p Dirige usuarios hacia un canal digital específico, como una página <i>web</i>, tienda virtual, catálogo, <i>blog</i>, formulario, <i>landing page</i> o perfil comercial. El anuncio debe precisar el beneficio de acceder al destino e incorporar un llamado a la acción coherente con el recorrido propuesto.
       //- Fin Pestañas horizontales
       p(data-aos="fade-left") Estos objetivos pueden desarrollarse de manera articulada: el reconocimiento facilita el primer contacto con la marca, la interacción fortalece la relación con la audiencia y el tráfico conduce a los usuarios hacia espacios donde pueden ampliar información o continuar su recorrido.
       Separador

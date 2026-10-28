@@ -96,7 +96,7 @@
               .row(titulo="Medición")
                 p.mb-4 Facilita identificar resultados relacionados con alcance, impresiones, clics, interacciones, reproducciones, registros, mensajes recibidos o ventas generadas. Esta información sirve como base para analizar el desempeño de la campaña.
               .row(titulo="Flexibilidad")
-                p.mb-4 Permite ajustar, pausar, duplicar o modificar anuncios de acuerdo con los resultados obtenidos. Los cambios pueden aplicarse al mensaje, el público, el presupuesto o el formato para mejorar el rendimiento de la campaña.
+                p.mb-4 Permite ajustar, pausar, duplicar o modificar anuncios de acuerdo con los resultados obtenidos. Los cambios pueden aplicarse al mensaje, al público, al presupuesto o al formato para mejorar el rendimiento de la campaña.
               .row(titulo="Variedad de formatos")
                 p.mb-4 Posibilita desarrollar contenidos mediante imágenes, videos, carruseles, historias, <i>reels</i> y otros formatos disponibles en las plataformas sociales, de acuerdo con las necesidades de comunicación.
               .row(titulo="Interacción")

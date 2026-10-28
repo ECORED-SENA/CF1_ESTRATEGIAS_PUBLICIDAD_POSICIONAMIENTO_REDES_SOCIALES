@@ -4,7 +4,7 @@
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
       // Para cuestionario usar: <ActividadController :cuestionario="cuestionario"/>
       // Para parrafo usar: <ActividadController :parrafo="parrafo"/>
-      #Actividad             
+      #Actividad            
       <ActividadController :cuestionario="cuestionario"/>
 
 </template>
@@ -20,42 +20,38 @@ export default {
   data: () => ({
     cuestionario: {
       tema: 'Planeación y diseño publicitario en redes sociales',
-      titulo: 'Cuestionario',
+      titulo:
+        'Cuestionario sobre planeación y diseño de estrategias publicitarias en redes sociales',
       introduccion:
-        '<b>Objetivo:</b> verificar la comprensión de los conceptos, principios y procedimientos relacionados con la publicidad digital en redes sociales, las estrategias publicitarias, los objetivos de campaña, la segmentación de audiencias, el presupuesto de pauta, los formatos de anuncios, el <i>copy</i> publicitario y la adaptación de piezas según la plataforma.',
+        '<b>Objetivo:</b> verificar la comprensión de los conceptos, principios y procedimientos relacionados con la publicidad digital en redes sociales, las estrategias publicitarias, los objetivos de campaña, la segmentación de audiencias, el presupuesto de pauta, los formatos de anuncios, el copy publicitario y la adaptación de piezas según la plataforma.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
       preguntas: [
         {
           id: 1,
-          texto:
-            '¿Qué define el objetivo publicitario dentro de una campaña en redes sociales?',
+          texto: '¿Qué caracteriza a la publicidad digital en redes sociales?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'El resultado que se espera alcanzar y la orientación de las decisiones de la campaña.',
+              texto: 'Difunde mensajes y genera respuestas específicas.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'Exclusivamente la cantidad de dinero que se va a gastar por día.',
+              texto: 'Se limita a publicaciones orgánicas.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto:
-                'La red social específica donde obligatoriamente se debe publicar el anuncio.',
+              texto: 'Evita segmentar a la audiencia.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'El diseño gráfico de la plantilla sin importar el mensaje.',
+              texto: 'Solo busca entretener usuarios.',
               esCorrecta: false,
             },
           ],
@@ -65,32 +61,28 @@ export default {
         {
           id: 2,
           texto:
-            '¿Cuál es la principal característica de la segmentación geográfica?',
+            '¿Qué característica permite dirigir anuncios a grupos definidos de usuarios?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Agrupar a las personas según su edad, género y nivel educativo.',
+              texto: 'Interacción.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Delimitar la audiencia según país, región, ciudad, municipio o radio de cobertura.',
+              texto: 'Segmentación.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto:
-                'Considerar únicamente los gustos y preferencias de navegación.',
+              texto: 'Variedad de formatos.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Analizar las compras anteriores realizadas en la tienda virtual.',
+              texto: 'Flexibilidad.',
               esCorrecta: false,
             },
           ],
@@ -100,31 +92,28 @@ export default {
         {
           id: 3,
           texto:
-            '¿Qué busca principalmente un objetivo de reconocimiento en una estrategia publicitaria?',
+            '¿Qué función cumple la publicidad digital dentro del <i>marketing</i> digital?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Cerrar ventas de forma inmediata mediante un formulario de pago.',
+              texto: 'Sustituye toda la estrategia de <i>marketing</i>.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Lograr que las personas identifiquen una marca, producto, servicio o proyecto.',
-              esCorrecta: true,
-            },
-            {
-              id: 'c',
-              texto:
-                'Únicamente obtener datos de contacto de clientes potenciales.',
+              texto: 'Elimina la propuesta de valor.',
               esCorrecta: false,
             },
             {
+              id: 'c',
+              texto: 'Amplía mensajes y promueve acciones específicas.',
+              esCorrecta: true,
+            },
+            {
               id: 'd',
-              texto: 'Monitorear el tráfico web de la competencia.',
+              texto: 'Define únicamente el diseño gráfico.',
               esCorrecta: false,
             },
           ],
@@ -133,31 +122,29 @@ export default {
         },
         {
           id: 4,
-          texto: '¿Qué describe el presupuesto diario en la pauta digital?',
+          texto:
+            '¿Qué debe definir primero una estrategia publicitaria digital?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'La cantidad total destinada a toda la campaña sin importar los días.',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto:
-                'La cantidad de dinero asignada para cada día durante el periodo de la campaña.',
+              texto: 'El objetivo de la campaña.',
               esCorrecta: true,
             },
             {
+              id: 'b',
+              texto: 'El color del anuncio.',
+              esCorrecta: false,
+            },
+            {
               id: 'c',
-              texto:
-                'El valor de comisión que cobra la plataforma por cada clic.',
+              texto: 'El nombre del archivo.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'El costo estimado de producción gráfica del anuncio.',
+              texto: 'La cantidad de comentarios.',
               esCorrecta: false,
             },
           ],
@@ -167,30 +154,28 @@ export default {
         {
           id: 5,
           texto:
-            '¿A qué hace referencia el formato de carrusel en la publicidad digital?',
+            '¿Qué objetivo busca que las personas identifiquen una marca o propuesta?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'A una pieza gráfica fija con una sola imagen estática.',
+              texto: 'Tráfico.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'A un video vertical exclusivo para historias de corta duración.',
+              texto: 'Conversión.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto:
-                'A la integración de varias imágenes o videos dentro de una misma publicación o anuncio.',
+              texto: 'Reconocimiento.',
               esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'A una encuesta interactiva dentro de la plataforma.',
+              texto: 'Ventas.',
               esCorrecta: false,
             },
           ],
@@ -199,31 +184,29 @@ export default {
         },
         {
           id: 6,
-          texto: '¿Cuál es la función principal del <i>copy</i> publicitario?',
+          texto:
+            '¿Qué objetivo dirige usuarios hacia una página web, catálogo o formulario?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Desarrollar el componente textual que acompaña, explica o refuerza la pieza publicitaria.',
+              texto: 'Tráfico.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'Definir la inversión económica y el método de pago del anuncio.',
+              texto: 'Reconocimiento.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Configurar los parámetros técnicos de la red social.',
+              texto: 'Fidelización.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Sustituir por completo cualquier recurso audiovisual en la pauta.',
+              texto: 'Interacción.',
               esCorrecta: false,
             },
           ],
@@ -232,31 +215,29 @@ export default {
         },
         {
           id: 7,
-          texto: '¿Qué define la fase de consideración en el embudo digital?',
+          texto:
+            '¿En qué fase del embudo se busca una acción concreta del usuario?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'El primer contacto con personas que jamás han oído hablar de la marca.',
+              texto: 'Atracción.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'El momento en que el usuario ya reconoce la marca o manifiesta algún nivel de interés para ampliar información.',
-              esCorrecta: true,
-            },
-            {
-              id: 'c',
-              texto:
-                'El proceso exclusivo de facturación y entrega del producto físico.',
+              texto: 'Consideración.',
               esCorrecta: false,
             },
             {
+              id: 'c',
+              texto: 'Conversión.',
+              esCorrecta: true,
+            },
+            {
               id: 'd',
-              texto: 'La cancelación definitiva de la suscripción del cliente.',
+              texto: 'Reconocimiento.',
               esCorrecta: false,
             },
           ],
@@ -265,31 +246,28 @@ export default {
         },
         {
           id: 8,
-          texto: '¿Qué comprende la segmentación por comportamiento?',
+          texto: '¿Qué describe mejor al público objetivo?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Acciones realizadas en entornos digitales como interacciones, clics, visitas, reproducciones o compras anteriores.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto:
-                'La ubicación exacta por coordenadas GPS de la oficina principal.',
+              texto: 'Todos los usuarios de una plataforma.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Personas a quienes se dirige la estrategia.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'La edad y el nivel socioeconómico del núcleo familiar.',
+              texto: 'Solo quienes ya compraron.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Los colores corporativos elegidos para el manual de marca.',
+              texto: 'Usuarios elegidos únicamente por edad.',
               esCorrecta: false,
             },
           ],
@@ -299,31 +277,28 @@ export default {
         {
           id: 9,
           texto:
-            '¿Qué función cumple el llamado a la acción (CTA) en un anuncio?',
+            '¿Qué criterio de segmentación se relaciona con la ubicación del usuario?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Indicar con claridad la respuesta que se espera del usuario tras recibir el anuncio.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Medir el ancho de banda del servidor web de la empresa.',
+              texto: 'Demográfico.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Geográfico.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto:
-                'Ocultar la información de contacto para generar misterio.',
+              texto: 'Intereses.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Modificar de forma automática el presupuesto total de la pauta.',
+              texto: 'Comportamiento.',
               esCorrecta: false,
             },
           ],
@@ -333,31 +308,28 @@ export default {
         {
           id: 10,
           texto:
-            '¿Qué caracteriza a una audiencia similar en la segmentación publicitaria?',
+            '¿Qué debe guardar correspondencia con el objetivo de campaña al seleccionar públicos?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Se orienta hacia nuevos usuarios que comparten características con una audiencia existente que ya tiene vínculo con la marca.',
+              texto: 'La segmentación y el mensaje.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'Son perfiles falsos creados para simular interacciones masivas.',
+              texto: 'Solo el logotipo.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto:
-                'Corresponde estrictamente a los empleados directos de la organización.',
+              texto: 'El nombre del archivo.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Agrupa a competidores directos en el mercado digital.',
+              texto: 'Únicamente la tipografía.',
               esCorrecta: false,
             },
           ],
@@ -366,31 +338,28 @@ export default {
         },
         {
           id: 11,
-          texto: '¿Cuál es el propósito del plan de pauta digital?',
+          texto: '¿Qué representa el presupuesto publicitario?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Organizar los componentes principales de una campaña (objetivo, público, formato, presupuesto, duración) antes de su ejecución.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Diseñar el logotipo oficial de la empresa en vectores.',
+              texto: 'La duración total del anuncio.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Los recursos económicos destinados a difusión.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto:
-                'Redactar los contratos laborales del equipo de marketing.',
+              texto: 'El tamaño de la audiencia.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Establecer los impuestos anuales de la entidad comercial.',
+              texto: 'El formato elegido.',
               esCorrecta: false,
             },
           ],
@@ -399,32 +368,28 @@ export default {
         },
         {
           id: 12,
-          texto:
-            '¿Qué define el enfoque de "Urgencia" en el <i>copy</i> publicitario?',
+          texto: '¿Qué caracteriza al presupuesto diario?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Orientar hacia una acción dentro de un periodo determinado, aplicándose cuando la condición temporal corresponde con la oferta.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto:
-                'Reportar fallas técnicas de la red social de manera inmediata.',
+              texto: 'Se asigna a toda la campaña.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Se asigna para cada día.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto:
-                'Exigir al usuario que compre sin importar si necesita el producto.',
+              texto: 'Solo aplica a videos.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Describir la historia antigua de la organización.',
+              texto: 'No depende de la duración.',
               esCorrecta: false,
             },
           ],
@@ -433,32 +398,28 @@ export default {
         },
         {
           id: 13,
-          texto:
-            '¿Qué rol cumple el posicionamiento digital en relación con la marca?',
+          texto: '¿Para qué sirve el plan de pauta digital?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Fortalecer la percepción, la recordación y la presencia mediante una comunicación coherente con los atributos y la propuesta de valor.',
+              texto: 'Organizar los componentes antes de ejecutar.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Definir el valor monetario exacto del inventario físico.',
+              texto: 'Reemplazar el objetivo publicitario.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto:
-                'Comprar espacios publicitarios en medios impresos tradicionales.',
+              texto: 'Eliminar la segmentación.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Eliminar por completo la necesidad de interactuar con clientes.',
+              texto: 'Definir únicamente el presupuesto.',
               esCorrecta: false,
             },
           ],
@@ -467,32 +428,28 @@ export default {
         },
         {
           id: 14,
-          texto: '¿Qué diferencia principal existe entre ventas y conversión?',
+          texto: '¿Qué debe comunicar una pieza publicitaria digital?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'La venta se orienta a promover la compra, mientras que la conversión es el cumplimiento de cualquier acción específica definida (registro, descarga, etc.), no necesariamente una venta.',
+              texto: 'Una idea clara y un beneficio relevante.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'La conversión solo aplica para transacciones en efectivo y la venta para tarjetas.',
+              texto: 'La mayor cantidad posible de texto.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto:
-                'No existe ninguna diferencia conceptual en el <i>marketing</i> digital.',
+              texto: 'Información sin relación con el público.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'La venta es gratuita y la conversión requiere inversión obligatoria.',
+              texto: 'Solo elementos visuales decorativos.',
               esCorrecta: false,
             },
           ],
@@ -501,31 +458,28 @@ export default {
         },
         {
           id: 15,
-          texto: '¿Qué busca el objetivo de clientes potenciales?',
+          texto: '¿Qué formato permite organizar varios beneficios o pasos?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Establecer contacto con personas interesadas y obtener información mediante formularios o mensajes para continuar la relación comercial.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto:
-                'Generar impresiones masivas sin importar si hay interacción humana.',
+              texto: 'Imagen.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Carrusel.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto:
-                'Vender productos de manera anónima y sin registros previos.',
+              texto: 'Historia.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Bloquear a usuarios que visiten la tienda virtual.',
+              texto: 'Publicación promocionada.',
               esCorrecta: false,
             },
           ],
@@ -535,31 +489,28 @@ export default {
         {
           id: 16,
           texto:
-            '¿Qué se debe verificar antes de publicar una pieza publicitaria digital?',
+            '¿Qué formato es pertinente para promociones temporales y llamados inmediatos?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Que el anuncio responda al objetivo, el mensaje sea comprensible, el formato corresponda con la plataforma y el CTA sea claro.',
+              texto: 'Historias.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'Únicamente que el archivo de imagen tenga un peso menor a un megabyte.',
+              texto: 'Carrusel.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto:
-                'Que la publicación se comparta de forma automática en todas las redes personales del equipo.',
+              texto: 'Imagen fija.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Que no se utilicen colores institucionales en el diseño.',
+              texto: 'Publicación promocionada.',
               esCorrecta: false,
             },
           ],
@@ -568,30 +519,28 @@ export default {
         },
         {
           id: 17,
-          texto: '¿Cuál es la utilidad de las publicaciones promocionadas?',
+          texto: '¿Qué es el copy publicitario?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Ampliar el alcance de contenidos publicados inicialmente de manera orgánica asignándoles inversión hacia una audiencia determinada.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto:
-                'Programar publicaciones automáticas para fines de semana.',
+              texto: 'El presupuesto asignado al anuncio.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'El componente textual que refuerza la pieza.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'Crear sitios web externos fuera de las redes sociales.',
+              texto: 'La segmentación geográfica.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Diseñar logotipos en formato 3D.',
+              texto: 'La duración de la campaña.',
               esCorrecta: false,
             },
           ],
@@ -600,32 +549,28 @@ export default {
         },
         {
           id: 18,
-          texto:
-            '¿Qué caracteriza al formato de <i>Reels</i> en redes sociales?',
+          texto: '¿Qué debe cumplir un llamado a la acción?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Contenidos audiovisuales breves y dinámicos que requieren claridad en el mensaje y un ritmo acorde con el consumo rápido.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto:
-                'Textos largos estáticos publicados en blogs institucionales.',
+              texto: 'Ser ambiguo para despertar curiosidad.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Ser claro y corresponder con la experiencia.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto:
-                'Fotografías impresas en alta resolución para catálogos físicos.',
+              texto: 'Repetir todo el anuncio.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Transmisiones en vivo de más de cinco horas continuas.',
+              texto: 'Usarse únicamente en campañas de ventas.',
               esCorrecta: false,
             },
           ],
@@ -634,31 +579,28 @@ export default {
         },
         {
           id: 19,
-          texto:
-            '¿Qué aborda el enfoque de "Confianza" en el <i>copy</i> publicitario?',
+          texto: '¿Qué implica adaptar un anuncio a diferentes plataformas?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Elementos relacionados con respaldo, experiencia o seguridad para fortalecer la credibilidad del mensaje.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Promociones falsas para capturar clientes desprevenidos.',
+              texto: 'Cambiar completamente la campaña.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Presentar adecuadamente el mensaje en cada canal.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'Descuentos exagerados sin stock disponible.',
+              texto: 'Mantener siempre idénticas dimensiones.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Información confidencial de la tarjeta de crédito del comprador.',
+              texto: 'Eliminar el llamado a la acción.',
               esCorrecta: false,
             },
           ],
@@ -668,30 +610,28 @@ export default {
         {
           id: 20,
           texto:
-            '¿Qué función cumple el presupuesto total dentro de una campaña?',
+            '¿Qué debe verificarse antes de publicar una pieza publicitaria?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Destinar la cantidad completa de recursos económicos para una campaña con un periodo definido de inicio y finalización.',
+              texto: 'Objetivo, público, formato, mensaje y aspectos técnicos.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'Cobrar una tarifa fija mensual a los empleados de la empresa.',
+              texto: 'Solo la cantidad de texto.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Calcular los gastos de servicios públicos de la oficina.',
+              texto: 'Únicamente el presupuesto diario.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Pagar comisiones bancarias internacionales.',
+              texto: 'Solo los colores de la marca.',
               esCorrecta: false,
             },
           ],
